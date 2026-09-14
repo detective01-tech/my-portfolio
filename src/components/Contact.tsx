@@ -48,35 +48,35 @@ export default function Contact() {
                 Direct Channels
               </h4>
               <a
-                href="mailto:contact@engineer.dev"
-                className="flex items-center gap-3 text-sm text-slate-700 hover:text-[#FF6B00] transition-colors font-medium"
+                href="mailto:muhammadsohail0318@gmail.com"
+                className="flex items-center gap-3 text-sm text-slate-700 hover:text-[#FF6B00] transition-colors font-medium break-all"
               >
-                <div className="w-8 h-8 rounded-full bg-orange-50 flex items-center justify-center text-[#FF6B00]">
+                <div className="w-8 h-8 rounded-full bg-orange-50 flex items-center justify-center text-[#FF6B00] shrink-0">
                   <Mail className="w-4 h-4" />
                 </div>
-                <span>contact@engineer.dev</span>
+                <span>muhammadsohail0318@gmail.com</span>
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/detective01-tech"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-sm text-slate-700 hover:text-[#FF6B00] transition-colors font-medium"
               >
-                <div className="w-8 h-8 rounded-full bg-orange-50 flex items-center justify-center text-[#FF6B00]">
+                <div className="w-8 h-8 rounded-full bg-orange-50 flex items-center justify-center text-[#FF6B00] shrink-0">
                   <GithubIcon className="w-4 h-4" />
                 </div>
-                <span>github.com/developer</span>
+                <span>github.com/detective01-tech</span>
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/muhammad-sohail-6076383ab?utm_source=share_via&utm_content=profile&utm_medium=member_android"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-sm text-slate-700 hover:text-[#FF6B00] transition-colors font-medium"
               >
-                <div className="w-8 h-8 rounded-full bg-orange-50 flex items-center justify-center text-[#FF6B00]">
+                <div className="w-8 h-8 rounded-full bg-orange-50 flex items-center justify-center text-[#FF6B00] shrink-0">
                   <LinkedinIcon className="w-4 h-4" />
                 </div>
-                <span>linkedin.com/in/developer</span>
+                <span>linkedin.com/in/muhammad-sohail</span>
               </a>
             </div>
           </div>

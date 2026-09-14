@@ -25,7 +25,7 @@ export default function Footer() {
 
           <div className="flex items-center gap-3">
             <a
-              href="https://github.com"
+              href="https://github.com/detective01-tech"
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-600 hover:text-[#FF6B00] transition-colors"
@@ -34,7 +34,7 @@ export default function Footer() {
               <GithubIcon className="w-4 h-4" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/muhammad-sohail-6076383ab?utm_source=share_via&utm_content=profile&utm_medium=member_android"
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-600 hover:text-[#FF6B00] transition-colors"
@@ -43,7 +43,7 @@ export default function Footer() {
               <LinkedinIcon className="w-4 h-4" />
             </a>
             <a
-              href="mailto:contact@engineer.dev"
+              href="mailto:muhammadsohail0318@gmail.com"
               className="w-9 h-9 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-600 hover:text-[#FF6B00] transition-colors"
               aria-label="Email"
             >
