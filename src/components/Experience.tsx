@@ -25,21 +25,23 @@ export default function Experience() {
         {/* Two Columns */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Col 1 */}
-          <div className="p-8 rounded-3xl bg-white border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div className="p-5 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-sm flex flex-col justify-between">
             <div>
-              <div className="flex items-center justify-between pb-4 mb-6 border-b border-slate-100">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-2xl bg-orange-50 flex items-center justify-center text-[#FF6B00]">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-100">
+                <div className="flex items-start sm:items-center gap-3">
+                  <div className="w-10 h-10 rounded-2xl bg-orange-50 flex items-center justify-center text-[#FF6B00] shrink-0 mt-0.5 sm:mt-0">
                     <Briefcase className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="text-base font-bold text-slate-900">Professional Engineering</h3>
-                    <p className="text-xs text-slate-500">Client Projects &amp; Remote Software Development</p>
+                    <h3 className="text-base font-bold text-slate-900 leading-tight">Professional Engineering</h3>
+                    <p className="text-xs text-slate-500 mt-0.5">Client Projects &amp; Remote Software Development</p>
                   </div>
                 </div>
-                <span className="text-xs px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 font-semibold border border-emerald-100">
-                  Active
-                </span>
+                <div className="self-start sm:self-auto pl-13 sm:pl-0">
+                  <span className="text-xs px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 font-semibold border border-emerald-100 inline-block">
+                    Active
+                  </span>
+                </div>
               </div>
 
               <div className="space-y-6">
@@ -75,21 +77,23 @@ export default function Experience() {
           </div>
 
           {/* Col 2 */}
-          <div className="p-8 rounded-3xl bg-white border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div className="p-5 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-sm flex flex-col justify-between">
             <div>
-              <div className="flex items-center justify-between pb-4 mb-6 border-b border-slate-100">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-2xl bg-orange-50 flex items-center justify-center text-[#FF6B00]">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-100">
+                <div className="flex items-start sm:items-center gap-3">
+                  <div className="w-10 h-10 rounded-2xl bg-orange-50 flex items-center justify-center text-[#FF6B00] shrink-0 mt-0.5 sm:mt-0">
                     <CheckCircle2 className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="text-base font-bold text-slate-900">Engineering Projects</h3>
-                    <p className="text-xs text-slate-500">Autonomous Platforms &amp; Architecture</p>
+                    <h3 className="text-base font-bold text-slate-900 leading-tight">Engineering Projects</h3>
+                    <p className="text-xs text-slate-500 mt-0.5">Autonomous Platforms &amp; Architecture</p>
                   </div>
                 </div>
-                <span className="text-xs px-2.5 py-1 rounded-full bg-slate-100 text-slate-600 font-semibold">
-                  Independent
-                </span>
+                <div className="self-start sm:self-auto pl-13 sm:pl-0">
+                  <span className="text-xs px-2.5 py-1 rounded-full bg-slate-100 text-slate-600 font-semibold inline-block">
+                    Independent
+                  </span>
+                </div>
               </div>
 
               <div className="space-y-4 text-sm text-slate-600">
