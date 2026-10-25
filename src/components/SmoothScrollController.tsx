@@ -43,7 +43,7 @@ export default function SmoothScrollController() {
         return;
       }
 
-      const duration = Math.min(1800, 1000 + Math.abs(distance) * 0.12);
+      const duration = Math.min(2400, 1400 + Math.abs(distance) * 0.16);
       let started: number | undefined;
       const step = (time: number) => {
         started ??= time;
