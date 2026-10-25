@@ -7,10 +7,10 @@ import {
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-20 bg-slate-50/50 border-t border-slate-200">
+    <section id="experience" className="py-14 sm:py-20 bg-slate-50/50 border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
+        <div data-reveal className="text-center max-w-3xl mx-auto mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-50 border border-orange-200 text-xs font-semibold text-[#EA580C] mb-3">
             Background
           </div>
@@ -25,9 +25,9 @@ export default function Experience() {
         {/* Two Columns */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Col 1 */}
-          <div className="p-5 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div className="portfolio-card p-5 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-sm flex flex-col justify-between">
             <div>
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-100">
+              <div data-reveal className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-100">
                 <div className="flex items-start sm:items-center gap-3">
                   <div className="w-10 h-10 rounded-2xl bg-orange-50 flex items-center justify-center text-[#FF6B00] shrink-0 mt-0.5 sm:mt-0">
                     <Briefcase className="w-5 h-5" />
@@ -44,8 +44,8 @@ export default function Experience() {
                 </div>
               </div>
 
-              <div className="space-y-6">
-                <div>
+              <div className="experience-timeline space-y-8">
+                <div data-reveal className="experience-entry">
                   <h4 className="text-sm font-bold text-slate-900 mb-1">Full-Stack Application Development</h4>
                   <p className="text-xs text-[#EA580C] font-semibold mb-2">Cross-Platform &amp; Web</p>
                   <p className="text-sm text-slate-600 leading-relaxed mb-3">
@@ -59,7 +59,7 @@ export default function Experience() {
                   </div>
                 </div>
 
-                <div className="pt-4 border-t border-slate-100">
+                <div data-reveal className="experience-entry">
                   <h4 className="text-sm font-bold text-slate-900 mb-1">DevSecOps &amp; Infrastructure Automation</h4>
                   <p className="text-xs text-[#EA580C] font-semibold mb-2">Cloud &amp; CI/CD</p>
                   <p className="text-sm text-slate-600 leading-relaxed mb-3">
@@ -77,9 +77,9 @@ export default function Experience() {
           </div>
 
           {/* Col 2 */}
-          <div className="p-5 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div className="portfolio-card p-5 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-sm flex flex-col justify-between">
             <div>
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-100">
+              <div data-reveal className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-100">
                 <div className="flex items-start sm:items-center gap-3">
                   <div className="w-10 h-10 rounded-2xl bg-orange-50 flex items-center justify-center text-[#FF6B00] shrink-0 mt-0.5 sm:mt-0">
                     <CheckCircle2 className="w-5 h-5" />
@@ -97,7 +97,7 @@ export default function Experience() {
               </div>
 
               <div className="space-y-4 text-sm text-slate-600">
-                <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                <div data-reveal className="p-4 rounded-2xl bg-slate-50 border border-slate-100">
                   <h4 className="text-sm font-bold text-slate-900 mb-1">
                     E-Commerce Architecture &amp; State Stores
                   </h4>
@@ -106,7 +106,7 @@ export default function Experience() {
                   </p>
                 </div>
 
-                <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                <div data-reveal className="p-4 rounded-2xl bg-slate-50 border border-slate-100">
                   <h4 className="text-sm font-bold text-slate-900 mb-1">
                     Security Monitoring &amp; Telemetry
                   </h4>
@@ -115,7 +115,7 @@ export default function Experience() {
                   </p>
                 </div>
 
-                <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                <div data-reveal className="p-4 rounded-2xl bg-slate-50 border border-slate-100">
                   <h4 className="text-sm font-bold text-slate-900 mb-1">
                     Continuous Systems Experimentation
                   </h4>

@@ -53,7 +53,7 @@ export default function Services() {
     <section id="services" className="py-20 bg-white border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
+        <div data-reveal className="text-center max-w-3xl mx-auto mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-50 border border-orange-200 text-xs font-semibold text-[#EA580C] mb-3">
             What I Deliver
           </div>
@@ -71,6 +71,7 @@ export default function Services() {
             const Icon = srv.icon;
             return (
               <div
+                data-reveal
                 key={srv.title}
                 className="p-8 rounded-3xl bg-slate-50 border border-slate-200 hover:border-[#FF6B00]/40 transition-all flex flex-col justify-between"
               >

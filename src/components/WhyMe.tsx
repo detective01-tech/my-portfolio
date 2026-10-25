@@ -35,7 +35,7 @@ export default function WhyMe() {
     <section id="why-me" className="py-20 bg-white border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
+        <div data-reveal className="text-center max-w-3xl mx-auto mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-50 border border-orange-200 text-xs font-semibold text-[#EA580C] mb-3">
             Why Work With Me
           </div>
@@ -53,6 +53,7 @@ export default function WhyMe() {
             const Icon = r.icon;
             return (
               <div
+                data-reveal
                 key={r.title}
                 className="p-8 rounded-3xl bg-slate-50 border border-slate-200 hover:border-[#FF6B00]/40 transition-all flex flex-col justify-between"
               >
@@ -75,7 +76,7 @@ export default function WhyMe() {
         </div>
 
         {/* Banner */}
-        <div className="p-8 rounded-3xl bg-orange-50/50 border border-orange-200 text-center">
+        <div data-reveal className="p-8 rounded-3xl bg-orange-50/50 border border-orange-200 text-center">
           <p className="text-base sm:text-lg font-medium text-slate-800 max-w-2xl mx-auto leading-relaxed italic">
             &ldquo;I care deeply about how software behaves today—and how maintainable it will be months down the line.&rdquo;
           </p>

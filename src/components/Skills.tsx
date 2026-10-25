@@ -87,7 +87,7 @@ export default function Skills() {
     <section id="skills" className="py-14 sm:py-20 bg-slate-50/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
+        <div data-reveal className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-50 border border-orange-200 text-xs font-semibold text-[#EA580C] mb-3">
             Technical Stack
           </div>
@@ -100,13 +100,14 @@ export default function Skills() {
         </div>
 
         {/* Scrollable / Flexible Tabs on Mobile */}
-        <div className="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto pb-3 mb-6 sm:mb-8 no-scrollbar">
+        <div data-reveal className="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto pb-3 mb-6 sm:mb-8 no-scrollbar">
           {SKILL_CATEGORIES.map((cat) => {
             const Icon = cat.icon;
             const isActive = activeTab === cat.id;
             return (
               <button
                 key={cat.id}
+                aria-pressed={isActive}
                 onClick={() => setActiveTab(cat.id)}
                 className={`flex items-center gap-2 px-3.5 py-2 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap transition-all cursor-pointer shrink-0 ${
                   isActive
@@ -122,11 +123,12 @@ export default function Skills() {
         </div>
 
         {/* Skill Cards Grid (Clean 2 columns on mobile, 4 on desktop) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+        <div data-reveal className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
           {currentCategory.skills.map((skill, index) => (
             <div
-              key={index}
-              className="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs flex flex-col justify-start"
+              key={skill.title}
+              style={{ animationDelay: `${index * 100}ms` }}
+              className="content-enter p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs flex flex-col justify-start"
             >
               <h4 className="text-sm sm:text-base font-bold text-slate-900 mb-1.5 flex items-center justify-between">
                 <span>{skill.title}</span>

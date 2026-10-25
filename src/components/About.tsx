@@ -64,7 +64,7 @@ export default function About() {
     <section id="about" className="py-14 sm:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
+        <div data-reveal className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-50 border border-orange-200 text-xs font-semibold text-[#EA580C] mb-3">
             About My Work
           </div>
@@ -80,7 +80,7 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-10 items-start">
           {/* Left Column */}
           <div className="lg:col-span-6 space-y-4 sm:space-y-6">
-            <div className="p-5 sm:p-7 rounded-2xl sm:rounded-3xl bg-slate-50 border border-slate-200">
+            <div data-reveal className="p-5 sm:p-7 rounded-2xl sm:rounded-3xl bg-slate-50 border border-slate-200">
               <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-4">
                 Core Engineering Capabilities
               </h3>
@@ -96,7 +96,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="p-5 sm:p-7 rounded-2xl sm:rounded-3xl bg-orange-50/60 border border-orange-200">
+            <div data-reveal className="p-5 sm:p-7 rounded-2xl sm:rounded-3xl bg-orange-50/60 border border-orange-200">
               <p className="text-xs sm:text-sm font-medium text-slate-800 leading-relaxed italic">
                 &ldquo;I build software with long-term reliability in mind—ensuring applications are maintainable, easy to scale, and secure by default.&rdquo;
               </p>
@@ -106,7 +106,7 @@ export default function About() {
           {/* Right Column: Visual Architecture */}
           <div className="lg:col-span-6">
             <div className="p-5 sm:p-7 rounded-2xl sm:rounded-3xl bg-slate-50 border border-slate-200">
-              <div className="flex items-center justify-between mb-4 pb-3 border-b border-slate-200">
+              <div data-reveal className="flex items-center justify-between mb-4 pb-3 border-b border-slate-200">
                 <h3 className="text-sm sm:text-base font-bold text-slate-900 flex items-center gap-2">
                   <Server className="w-4 h-4 text-[#FF6B00]" />
                   System Architecture Overview
@@ -120,7 +120,7 @@ export default function About() {
                 {ARCHITECTURE_LAYERS.map((layer, index) => {
                   const Icon = layer.icon;
                   return (
-                    <div key={layer.layer} className="relative">
+                    <div data-reveal key={layer.layer} className="relative">
                       <div className="p-4 rounded-2xl bg-white border border-slate-200/90 shadow-xs">
                         {/* Top bar: Icon + Layer Name + Step Number */}
                         <div className="flex items-center justify-between gap-3 mb-2">

@@ -14,33 +14,42 @@ import SmoothScrollController from "@/components/SmoothScrollController";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-slate-900 selection:bg-[#FF6B00] selection:text-white">
+    <>
+      <a href="#main-content" className="skip-link">Skip to content</a>
       <SmoothScrollController />
       <Navbar />
-      <Hero />
-      <LogoMarquee />
-      <RevealOnScroll delay={80} duration={1150}>
-        <About />
+      <main id="main-content" tabIndex={-1} className="min-h-screen bg-white text-slate-900 selection:bg-[#FF6B00] selection:text-white">
+        <RevealOnScroll>
+          <Hero />
+        </RevealOnScroll>
+        <RevealOnScroll direction="none">
+          <LogoMarquee />
+        </RevealOnScroll>
+        <RevealOnScroll>
+          <About />
+        </RevealOnScroll>
+        <RevealOnScroll>
+          <Skills />
+        </RevealOnScroll>
+        <RevealOnScroll>
+          <Services />
+        </RevealOnScroll>
+        <RevealOnScroll>
+          <DevSecOpsSection />
+        </RevealOnScroll>
+        <RevealOnScroll>
+          <WhyMe />
+        </RevealOnScroll>
+        <RevealOnScroll>
+          <Experience />
+        </RevealOnScroll>
+        <RevealOnScroll>
+          <Contact />
+        </RevealOnScroll>
+      </main>
+      <RevealOnScroll>
+        <Footer />
       </RevealOnScroll>
-      <RevealOnScroll delay={80} duration={1150}>
-        <Skills />
-      </RevealOnScroll>
-      <RevealOnScroll delay={80} duration={1150}>
-        <Services />
-      </RevealOnScroll>
-      <RevealOnScroll delay={80} duration={1150}>
-        <DevSecOpsSection />
-      </RevealOnScroll>
-      <RevealOnScroll delay={80} duration={1150}>
-        <WhyMe />
-      </RevealOnScroll>
-      <RevealOnScroll delay={80} duration={1150}>
-        <Experience />
-      </RevealOnScroll>
-      <RevealOnScroll delay={80} duration={1150}>
-        <Contact />
-      </RevealOnScroll>
-      <Footer />
-    </main>
+    </>
   );
 }

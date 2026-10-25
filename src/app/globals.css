@@ -21,6 +21,80 @@
     background-color: #FFFFFF;
     color: #0F172A;
   }
+
+  :focus-visible {
+    outline: 2px solid var(--accent-orange);
+    outline-offset: 4px;
+  }
+}
+
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 100;
+  transform: translateY(-160%);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: #FFFFFF;
+  color: #0F172A;
+}
+
+.skip-link:focus { transform: translateY(0); }
+
+.portfolio-card {
+  transition: border-color 200ms ease, box-shadow 200ms ease, transform 200ms ease;
+}
+
+@media (hover: hover) {
+  .portfolio-card:hover {
+    border-color: #FF8A3D;
+    box-shadow: 0 12px 30px -20px rgba(15, 23, 42, 0.3);
+    transform: translateY(-3px);
+  }
+}
+
+.hero-showcase {
+  box-shadow: 0 24px 64px -36px rgba(255, 107, 0, 0.35), 0 6px 24px -16px rgba(15, 23, 42, 0.15);
+}
+
+.experience-timeline {
+  margin-left: 0.375rem;
+  padding-left: 1.5rem;
+  border-left: 1px solid #E2E8F0;
+}
+
+.experience-entry { position: relative; }
+.experience-entry::before {
+  content: "";
+  position: absolute;
+  left: -1.875rem;
+  top: 0.25rem;
+  width: 0.6875rem;
+  height: 0.6875rem;
+  border: 3px solid #FFFFFF;
+  border-radius: 50%;
+  background: #FF6B00;
+  box-shadow: 0 0 0 1px #FF8A3D;
+}
+
+/* Short transitions for content replaced by interaction. */
+@keyframes content-enter {
+  from { opacity: 0; translate: 0 12px; }
+  to { opacity: 1; translate: 0 0; }
+}
+
+.content-enter {
+  animation: content-enter 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes navigation-enter {
+  from { opacity: 0; translate: 0 -10px; }
+  to { opacity: 1; translate: 0 0; }
+}
+
+.navigation-enter {
+  animation: navigation-enter 900ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
 }
 
 /* Custom Utilities for Clean White Theme */
@@ -72,4 +146,19 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #FF6B00;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+  }
+  .content-enter, .navigation-enter { animation: none !important; }
+}
+
+@media print {
+  * { animation: none !important; }
 }
